@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Kevin Sun} \\ \vspace{1pt}
+    \small 703-863-6861 $|$ \href{mailto:ksun2715@gmail.com}{\underline{ksun2715@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ksun2715/}{\underline{linkedin.com/in/ksun2715/}} $|$
+    \href{https://ksun27.github.io/}{\underline{ksun27.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University, Leonard N. Stern School of Business}{Sep. 2018 -- Dec. 2021}
+      {Bachelor of Science in Business (Finance), Bachelor of Arts in Computer Science}{New York, NY}
+    \small{\item{
+        \textbf{Relevant Coursework}{: Multivariate Regression, Statistical Analysis, Computer Systems Architecture, Data Structures, Discrete Math, Foundations of Finance, Basic Algorithms, Data Management, Parallel Computing} \\
+    }}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FactSet Research Systems}{July 2022 -- Present}
+      {Software Engineer II}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Engineered full stack components using Angular and C\# to provide data
+                    insurance and integrity through data source cross-checking for financial data through FactSet's data integrity testing platform called Test Manager}
+        \resumeItem{Constructed a notification service with serviceable endpoints for in-house teams to use to send notifications through emails, opsgenie pings, and support tickets; over 1,500+ requests have been processed and sent to stakeholders}
+        \resumeItem{Revamped stored procedures and front end designs of Jupyter Notebook data
+integrity test runs to display cross-checked data from different selected data environments and test runs; this affected over 10k+ test runs}
+        \resumeItem{Developed an announcement system using Angular and SQL within the Test Manager web application to inform clients of disclosures and notable feature releases; over 100 announcements have been released so far to clients}
+        \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {New York University Information Technology}{Mar. 2020 -- Dec. 2021}
+      {Student Technology Assistant}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Assisted on 500+ tickets with clients regarding remote technology issues
+with software programs like Zoom}
+        \resumeItem{ Wrote a python script for organizing tickets based on
+metadata for faster referencing of tickets for student workers}
+        \resumeItem{Optimized client communication with remote takeover via Zoom to help solve
+issues regarding software}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Fundstrat Global Advisors}{June 2020 -- Aug. 2020}
+      {Fullstack Engineering Intern}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Proposed and implemented new website content architecture and navigation utilizing the Tailwind CSS framework}
+        \resumeItem{Designed wireframes of new website with Figma to provide UI/UX design solutions to the Chief Technology Officer}
+        \resumeItem{Generated templates for automated emails on the Klaviyo platform by providing
+custom HTML and CSS designs}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {New York University Innovention Society}{Sep. 2019 -- May 2020}
+      {Assistant Director, First-year Entrepreneurship Recruits}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Conducted and led events designed to engage freshmen with
+start-up culture, entrepreneurship, and venture capital}
+        \resumeItem{Directed workshops for students in topics such as Python and Java to
+aid in the development of students' projects}
+        \resumeItem{Attended meetings with executive members to plan events
+such as the InnoVention Competition (\$50,000 prize)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Pharma Market ML \& NLP Analyzer} $|$ \emph{Temporal Fusion Transformer, BERT}}
+          {Dec 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Analytical project utilizing Machine Learning and Natural Language Processing to conduct a predictive paradigm for the pharma market based on FDA approvals, clinical trial results, and historical market data}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{WNBA Data Modeling Project} $|$ \emph{Python, Matplotlib, pandas, NumPy, Git}}{Mar. 2021}
+          \resumeItemListStart
+            \resumeItem{Performed data modeling calculations for WNBA statistics to understand excel parsing and data management}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{EZSTOX, HackUVA Domain.com Sponsored Award} $|$ \emph{Javascript, HTML/CSS, AJAX}}{Mar. 2018}
+          \resumeItemListStart
+            \resumeItem{Developed a stock market analytical web application that implements various metrics to analyze investments}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{EyeMove, PilotDC 2015 "Most Innovative" Project} $|$ \emph{Python, win32 API, OpenCV}}{Feb. 2015}
+          \resumeItemListStart
+            \resumeItem{Moves mouse cursor based on where user is looking on the screen; left/right clicks based on left/right blinks}
+            \resumeItem{With win32 API and OpenCV, the script loads two HAAR classifiers for the face and eyes to determine offsets from center screen; this allows for identification of eye movement and blinks that align with cursor movement and clicks}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C\#, SQL, JavaScript, Typescript, HTML/CSS} \\
+     \textbf{Tools, Frameworks, Libraries}{: Git, Flask, FastAPI, Redis Queue, RedGate, React, Vue, Node.js, MongoDB, Postgres, Microsoft SQL Server, NumPy, pandas, Matplotlib, Jupyter Notebooks, Visual Studio, VS Code, Excel} \\
+     \textbf{Design}{: Figma, Lucidchart, Adobe Photoshop, Adobe Lightroom}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
